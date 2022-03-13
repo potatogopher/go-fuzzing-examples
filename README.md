@@ -6,6 +6,14 @@ This repo is just me going through the [Go Fuzzing](https://go.dev/doc/fuzz) doc
 
 Fuzzing is a type of automated testing that continuously runs a program with multiple different inputs. Beneficial for finding security expoloits and vulnerabilites.
 
+Vulnerabilites that can be caught through fuzzing:
+- SQL Injection
+- Buffer overflow
+- Denial of service
+- Cross-site scripting attacks
+
+_Note: Go fuzzing only works on AMD64 and ARM64 architectures currently_
+
 Fuzz targets are invoked in parallel across multiple workers and in nondeterministic order.
 
 
